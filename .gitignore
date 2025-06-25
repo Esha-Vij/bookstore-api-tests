@@ -1,0 +1,30 @@
+# Eclipse specific
+.classpath
+.project
+.settings/
+.apt_generated/
+.factorypath
+
+# IntelliJ specific
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Maven build
+/target/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Reports
+/extent-reports/
+/cucumber-html-report.html
+
+# Environment/Secrets
+config.properties
+.env
