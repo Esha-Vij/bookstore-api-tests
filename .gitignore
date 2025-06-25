@@ -17,14 +17,5 @@
 # Logs
 *.log
 
-# OS generated files
-.DS_Store
-Thumbs.db
-
 # Reports
 /extent-reports/
-/cucumber-html-report.html
-
-# Environment/Secrets
-config.properties
-.env
