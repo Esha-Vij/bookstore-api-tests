@@ -1,0 +1,9 @@
+com/bookstore/utils/AuthUtil.class
+com/bookstore/base/package-info.class
+com/bookstore/constants/package-info.class
+com/bookstore/payloads/BookPayload.class
+com/bookstore/service/BookService.class
+com/bookstore/tests/package-info.class
+com/bookstore/config/ConfigManager.class
+com/bookstore/api/tests/BookApiTest.class
+com/bookstore/data/BookData.class
