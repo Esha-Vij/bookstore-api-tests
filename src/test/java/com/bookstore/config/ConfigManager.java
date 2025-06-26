@@ -28,12 +28,4 @@ public class ConfigManager {
     	
         return value;
     }
-
-//    public static String getUsername() {
-//        return get("username");
-//    }
-
-//    public static String getPassword() {
-//        return get("password");
-//    }
 }

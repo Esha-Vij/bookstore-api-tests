@@ -26,7 +26,6 @@ public class BookApiTest {
      private static BookPayload book;
     @BeforeClass
     public void setup() {
-        // Ensure signup and login are done once before tests
         token = AuthUtil.getBearerToken(); // this will trigger signup + login only once
     }
 
@@ -51,12 +50,12 @@ public class BookApiTest {
          book = BookData.getRandomBook();
         Response response = BookService.createBook(book, token);
         
-        System.out.println("Payload sent: " + book);
-        System.out.println("Response: " + response.asString());
+       // System.out.println("Payload sent: " + book);
+        //System.out.println("Response: " + response.asString());
         
         // Extract actual book ID returned from API response
         bookId = response.jsonPath().getInt("id");
-        System.out.println("✅ Created book ID from response: " + bookId);
+       // System.out.println("✅ Created book ID from response: " + bookId);
         
         Assert.assertEquals(response.getStatusCode(), 200, "Book creation should be successful");
         Assert.assertTrue(bookId > 0, "Book ID should be positive");
@@ -95,7 +94,7 @@ public class BookApiTest {
         Response del = BookService.deleteBook(bookId, token);
         Assert.assertEquals(del.statusCode(), 200, "Book deletion should be successful");
         
-        // Change bookId to simulate deletion - mock server will return 404 for ID 2
+        // Change bookId to simulate deletion - server will return 404 for ID 2
         bookId = 2;
     }
 

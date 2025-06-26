@@ -90,30 +90,8 @@ import static io.restassured.RestAssured.given;
 public class BookService {
 
     private static final String BASE_URL = ConfigManager.getBaseUrl();
-
-//    public static Response createBook(BookPayload book, String token) {
-//      //  System.out.println(book.toString()); // Logging the payload
-//
-//        RequestSpecification request = given()
-//                .baseUri(BASE_URL)
-//                .contentType(ContentType.JSON)
-//                .body(book)
-//                .log().all(); // Log full request
-//
-//        if (token != null && !token.trim().isEmpty()) {
-//            request.header("Authorization", token);
-//        }
-    
-   // return request
-//          .when()
-//          .post("/books/")
-//          .then()
-//          .log().all() // Log full response
-//          .extract().response();
-//}
-    
     public static Response createBook(BookPayload book, String token) {
-        System.out.println(book != null ? book.toString() : "Book payload is null");
+       // System.out.println(book != null ? book.toString() : "Book payload is null");
 
         RequestSpecification request = given()
                 .baseUri(BASE_URL)
@@ -146,18 +124,6 @@ public class BookService {
                 .log().all()
                 .extract().response();
     }
-
-
-//    public static Response getBookById(int bookId, String token) {
-//        return given()
-//                .baseUri(BASE_URL)
-//                .header("Authorization", token)
-//                .when()
-//                .get("/books/" + bookId)
-//                .then()
-//                .log().all()
-//                .extract().response();
-//    }
 
     public static Response updateBook(int bookId, BookPayload updatedBook, String token) {
         return given()

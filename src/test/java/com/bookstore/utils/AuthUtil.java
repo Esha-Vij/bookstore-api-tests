@@ -53,17 +53,10 @@ public class AuthUtil {
         System.out.println("Used email: " + email);
         System.out.println("Used password: " + password);
         System.out.println("Used ID: " + id);
-        
-        // ⏳ Wait briefly to ensure signup is fully processed by backend
-        try {
-            Thread.sleep(1000); // 500 milliseconds = 0.5 second
-        } catch (InterruptedException e) {
-            e.printStackTrace(); // optional: log error
-        }
 
         // Login with same data
         Response loginResponse = login(id, email, password);
-        System.out.println("Login response: " + loginResponse.asString());
+       System.out.println("Login response: " + loginResponse.asString());
 
         token = loginResponse.jsonPath().getString("access_token");
     }

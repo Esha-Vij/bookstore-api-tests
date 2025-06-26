@@ -37,7 +37,9 @@ This project is a REST API automation framework built to test the core functiona
 - Environment-based configuration with `config.properties`
 - TestNG for test execution
 - Maven for dependency management and test lifecycle
-- Ready for GitHub Actions CI/CD (coming next)
+- CI/CD pipeline setup via Jenkins (or GitHub Actions, easily extendable)
+- Large Test Suites → Grouping - Smoke Test, CRUD Test, Authentication Test, Negative Test, All Test.
+- Generate Allure Report from generate-allure-report.sh file
 - **FastAPI Server** - Real server implementation for integration testing
 
 
@@ -75,15 +77,15 @@ bookstore-api-tests/
 ## 🧰 Tools & Technologies
 
 
-| Tool         | Description                          |
-|--------------|--------------------------------------|
-| Java         | Programming language                 |
-| RestAssured  | API testing library                  |
-| TestNG       | Test framework                       |
-| Maven        | Build & dependency management        |
-| FastAPI      | Python web framework (server)        |
-| GitHub       | Version control and collaboration    |
-| GitHub Actions | (Coming Soon) CI/CD automation     |
+| Tool           | Description                       |
+|----------------|-----------------------------------|
+| Java           | Programming language              |
+| RestAssured    | API testing library               |
+| TestNG         | Test framework                    |
+| Maven          | Build & dependency management     |
+| Allure Reports | Generate beautiful test reports   |
+| GitHub         | Version control and collaboration |
+| GitHub Actions | (Coming Soon) CI/CD automation    |
 
 
 ---
@@ -98,7 +100,7 @@ bookstore-api-tests/
 - Java 11+
 - Maven installed and added to `PATH`
 - IDE (Eclipse, IntelliJ, VS Code)
-- Python 3.7+ (optional, for FastAPI server)
+- Docker 
 
 
 ### 2. Clone the Repository
@@ -131,6 +133,10 @@ mvn test
 ```bash
 mvn test -DsuiteXmlFile=testng.xml
 ```
+### Using Generate-allure-report.sh
+```bash
+Right click on the green triangle button and run the test.
+```
 
 
 ### Using IDE
@@ -140,13 +146,17 @@ Right-click the test class and run as TestNG Test
 ---
 
 
-## 🔐 Authentication Strategy
+## 🔐 Testing Strategy
 
 
 - Sign-up & Login are handled automatically in `AuthUtil.java`
 - Unique id, email, and password are generated per test run
 - Bearer Token is extracted and used for all authorized endpoints
-- No manual token handling is required
+- No manual token handling is required.
+- Comprehensive test coverage covering all CRUD operations with both positive and Negative test cases.
+- Assertions: Robust validation on HTTP status codes, response payloads, headers, and error messages.
+- Configuration Management: Uses a properties file to easily switch between environments (dev, QA, prod)
+- Go through TEST_DESIGN.md to understand the test design.
 
 
 ---
@@ -195,11 +205,23 @@ If you see `java.net.ConnectException: Connection refused`, it means the tests a
 
 ---
 
+### CI/CD Integration
+
+ The Jenkinsfile includes:
+
+- Code checkout from Git
+- Maven build and test execution
+- JUnit report publishing
+- Extent report publishing as HTML artifact
+- You can configure GitHub Actions or other CI tools similarly to run tests on each push or PR.
+
+
+---
+
 
 ## 📈 Future Scope
 
 
-- [ ] GitHub Actions CI/CD pipeline
 - [ ] Docker containerization
 - [ ] Database integration testing
 - [ ] Performance testing with JMeter
