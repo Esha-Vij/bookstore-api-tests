@@ -1,473 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="0" failed="5" skipped="6">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-25T18:10:01 IST" name="Bookstore API Suite" finished-at="2025-06-25T18:10:08 IST" duration-ms="7371">
+  <suite started-at="2025-06-26T16:04:39 IST" name="Bookstore API Suite" finished-at="2025-06-26T16:04:50 IST" duration-ms="10883">
     <groups>
     </groups>
-    <test started-at="2025-06-25T18:10:01 IST" name="API Tests" finished-at="2025-06-25T18:10:08 IST" duration-ms="7371">
+    <test started-at="2025-06-26T16:04:39 IST" name="API Tests" finished-at="2025-06-26T16:04:50 IST" duration-ms="10883">
       <class name="com.bookstore.api.tests.BookApiTest">
-        <test-method signature="testLogin()[pri:1, instance:com.bookstore.api.tests.BookApiTest@4c60d6e9]" started-at="2025-06-25T18:10:01 IST" name="testLogin" finished-at="2025-06-25T18:10:08 IST" duration-ms="7116" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [400]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [400]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:1418)
-at org.testng.Assert.assertEquals(Assert.java:1382)
-at org.testng.Assert.assertEquals(Assert.java:1428)
-at com.bookstore.api.tests.BookApiTest.testLogin(BookApiTest.java:370)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bookstore.api.tests.BookApiTest@4d1c005e]" started-at="2025-06-26T16:04:39 IST" name="setup" finished-at="2025-06-26T16:04:43 IST" duration-ms="4209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin()[pri:1, instance:com.bookstore.api.tests.BookApiTest@4d1c005e]" started-at="2025-06-26T16:04:43 IST" name="testLogin" finished-at="2025-06-26T16:04:49 IST" duration-ms="5499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method signature="testCreateBook()[pri:2, instance:com.bookstore.api.tests.BookApiTest@4c60d6e9]" started-at="2025-06-25T18:10:08 IST" name="testCreateBook" finished-at="2025-06-25T18:10:08 IST" depends-on-methods="com.bookstore.api.tests.BookApiTest.testLogin" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.bookstore.api.tests.BookApiTest.testCreateBook() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9 depends on not successfully finished methods 
-[com.bookstore.api.tests.BookApiTest.testLogin() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.bookstore.api.tests.BookApiTest.testCreateBook() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9 depends on not successfully finished methods 
-[com.bookstore.api.tests.BookApiTest.testLogin() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="testCreateBook()[pri:2, instance:com.bookstore.api.tests.BookApiTest@4d1c005e]" started-at="2025-06-26T16:04:49 IST" name="testCreateBook" finished-at="2025-06-26T16:04:50 IST" depends-on-methods="com.bookstore.api.tests.BookApiTest.testLogin" duration-ms="706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateBook -->
-        <test-method signature="testGetBookById()[pri:3, instance:com.bookstore.api.tests.BookApiTest@4c60d6e9]" started-at="2025-06-25T18:10:08 IST" name="testGetBookById" finished-at="2025-06-25T18:10:08 IST" depends-on-methods="com.bookstore.api.tests.BookApiTest.testCreateBook" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.bookstore.api.tests.BookApiTest.testGetBookById() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9 depends on not successfully finished methods 
-[com.bookstore.api.tests.BookApiTest.testCreateBook() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.bookstore.api.tests.BookApiTest.testGetBookById() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9 depends on not successfully finished methods 
-[com.bookstore.api.tests.BookApiTest.testCreateBook() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="testGetBookById()[pri:3, instance:com.bookstore.api.tests.BookApiTest@4d1c005e]" started-at="2025-06-26T16:04:50 IST" name="testGetBookById" finished-at="2025-06-26T16:04:50 IST" depends-on-methods="com.bookstore.api.tests.BookApiTest.testCreateBook" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetBookById -->
-        <test-method signature="testUpdateBook()[pri:4, instance:com.bookstore.api.tests.BookApiTest@4c60d6e9]" started-at="2025-06-25T18:10:08 IST" name="testUpdateBook" finished-at="2025-06-25T18:10:08 IST" depends-on-methods="com.bookstore.api.tests.BookApiTest.testGetBookById" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.bookstore.api.tests.BookApiTest.testUpdateBook() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9 depends on not successfully finished methods 
-[com.bookstore.api.tests.BookApiTest.testGetBookById() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.bookstore.api.tests.BookApiTest.testUpdateBook() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9 depends on not successfully finished methods 
-[com.bookstore.api.tests.BookApiTest.testGetBookById() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="testUpdateBook()[pri:4, instance:com.bookstore.api.tests.BookApiTest@4d1c005e]" started-at="2025-06-26T16:04:50 IST" name="testUpdateBook" finished-at="2025-06-26T16:04:50 IST" depends-on-methods="com.bookstore.api.tests.BookApiTest.testGetBookById" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateBook -->
-        <test-method signature="testGetAllBooks()[pri:5, instance:com.bookstore.api.tests.BookApiTest@4c60d6e9]" started-at="2025-06-25T18:10:08 IST" name="testGetAllBooks" finished-at="2025-06-25T18:10:08 IST" depends-on-methods="com.bookstore.api.tests.BookApiTest.testUpdateBook" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.bookstore.api.tests.BookApiTest.testGetAllBooks() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9 depends on not successfully finished methods 
-[com.bookstore.api.tests.BookApiTest.testUpdateBook() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.bookstore.api.tests.BookApiTest.testGetAllBooks() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9 depends on not successfully finished methods 
-[com.bookstore.api.tests.BookApiTest.testUpdateBook() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="testGetAllBooks()[pri:5, instance:com.bookstore.api.tests.BookApiTest@4d1c005e]" started-at="2025-06-26T16:04:50 IST" name="testGetAllBooks" finished-at="2025-06-26T16:04:50 IST" depends-on-methods="com.bookstore.api.tests.BookApiTest.testUpdateBook" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAllBooks -->
-        <test-method signature="testDeleteBook()[pri:6, instance:com.bookstore.api.tests.BookApiTest@4c60d6e9]" started-at="2025-06-25T18:10:08 IST" name="testDeleteBook" finished-at="2025-06-25T18:10:08 IST" depends-on-methods="com.bookstore.api.tests.BookApiTest.testGetAllBooks" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.bookstore.api.tests.BookApiTest.testDeleteBook() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9 depends on not successfully finished methods 
-[com.bookstore.api.tests.BookApiTest.testGetAllBooks() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.bookstore.api.tests.BookApiTest.testDeleteBook() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9 depends on not successfully finished methods 
-[com.bookstore.api.tests.BookApiTest.testGetAllBooks() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="testDeleteBook()[pri:6, instance:com.bookstore.api.tests.BookApiTest@4d1c005e]" started-at="2025-06-26T16:04:50 IST" name="testDeleteBook" finished-at="2025-06-26T16:04:50 IST" depends-on-methods="com.bookstore.api.tests.BookApiTest.testGetAllBooks" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteBook -->
-        <test-method signature="testGetDeletedBook()[pri:7, instance:com.bookstore.api.tests.BookApiTest@4c60d6e9]" started-at="2025-06-25T18:10:08 IST" name="testGetDeletedBook" finished-at="2025-06-25T18:10:08 IST" depends-on-methods="com.bookstore.api.tests.BookApiTest.testDeleteBook" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.bookstore.api.tests.BookApiTest.testGetDeletedBook() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9 depends on not successfully finished methods 
-[com.bookstore.api.tests.BookApiTest.testDeleteBook() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.bookstore.api.tests.BookApiTest.testGetDeletedBook() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9 depends on not successfully finished methods 
-[com.bookstore.api.tests.BookApiTest.testDeleteBook() on instance com.bookstore.api.tests.BookApiTest@4c60d6e9]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="testGetDeletedBook()[pri:7, instance:com.bookstore.api.tests.BookApiTest@4d1c005e]" started-at="2025-06-26T16:04:50 IST" name="testGetDeletedBook" finished-at="2025-06-26T16:04:50 IST" depends-on-methods="com.bookstore.api.tests.BookApiTest.testDeleteBook" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetDeletedBook -->
-        <test-method signature="testCreateBookWithoutToken()[pri:8, instance:com.bookstore.api.tests.BookApiTest@4c60d6e9]" started-at="2025-06-25T18:10:08 IST" name="testCreateBookWithoutToken" finished-at="2025-06-25T18:10:08 IST" duration-ms="24" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Header value cannot be null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Header value cannot be null
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
-at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.header(RequestSpecificationImpl.groovy:869)
-at com.bookstore.service.BookService.createBook(BookService.java:97)
-at com.bookstore.api.tests.BookApiTest.testCreateBookWithoutToken(BookApiTest.java:421)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+        <test-method signature="testCreateBookWithoutToken()[pri:8, instance:com.bookstore.api.tests.BookApiTest@4d1c005e]" started-at="2025-06-26T16:04:50 IST" name="testCreateBookWithoutToken" finished-at="2025-06-26T16:04:50 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateBookWithoutToken -->
-        <test-method signature="testGetNonExistentBook()[pri:9, instance:com.bookstore.api.tests.BookApiTest@4c60d6e9]" started-at="2025-06-25T18:10:08 IST" name="testGetNonExistentBook" finished-at="2025-06-25T18:10:08 IST" duration-ms="3" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Header value cannot be null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Header value cannot be null
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.header(RequestSpecificationImpl.groovy:869)
-at com.bookstore.service.BookService.getBookById(BookService.java:109)
-at com.bookstore.api.tests.BookApiTest.testGetNonExistentBook(BookApiTest.java:428)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetNonExistentBook -->
-        <test-method signature="testCreateBookWithEmptyPayload()[pri:10, instance:com.bookstore.api.tests.BookApiTest@4c60d6e9]" started-at="2025-06-25T18:10:08 IST" name="testCreateBookWithEmptyPayload" finished-at="2025-06-25T18:10:08 IST" duration-ms="7" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Header value cannot be null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Header value cannot be null
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
-at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.header(RequestSpecificationImpl.groovy:869)
-at com.bookstore.service.BookService.createBook(BookService.java:97)
-at com.bookstore.api.tests.BookApiTest.testCreateBookWithEmptyPayload(BookApiTest.java:434)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBookWithEmptyPayload -->
-        <test-method signature="testDeleteAlreadyDeletedBook()[pri:11, instance:com.bookstore.api.tests.BookApiTest@4c60d6e9]" started-at="2025-06-25T18:10:08 IST" name="testDeleteAlreadyDeletedBook" finished-at="2025-06-25T18:10:08 IST" duration-ms="9" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Header value cannot be null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Header value cannot be null
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-at io.restassured.internal.RequestSpecificationImpl.header(RequestSpecificationImpl.groovy:869)
-at com.bookstore.service.BookService.deleteBook(BookService.java:133)
-at com.bookstore.api.tests.BookApiTest.testDeleteAlreadyDeletedBook(BookApiTest.java:440)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeleteAlreadyDeletedBook -->
       </class> <!-- com.bookstore.api.tests.BookApiTest -->
     </test> <!-- API Tests -->
   </suite> <!-- Bookstore API Suite -->

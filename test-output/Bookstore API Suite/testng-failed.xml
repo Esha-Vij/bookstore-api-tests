@@ -8,9 +8,9 @@
           <include name="testUpdateBook"/>
           <include name="testCreateBookWithEmptyPayload"/>
           <include name="testDeleteBook"/>
-          <include name="testCreateBookWithoutToken"/>
           <include name="testLogin"/>
           <include name="testGetNonExistentBook"/>
+          <include name="setup"/>
           <include name="testCreateBook"/>
           <include name="testGetDeletedBook"/>
           <include name="testGetAllBooks"/>

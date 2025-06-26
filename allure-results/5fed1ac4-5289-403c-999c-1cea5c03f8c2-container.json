@@ -1,0 +1,1 @@
+{"uuid":"5fed1ac4-5289-403c-999c-1cea5c03f8c2","name":"com.bookstore.api.tests.BookApiTest","children":["9f31d8d1-11d1-4fa1-a073-5f1e941c1497"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1750931185772,"stop":1750931189976}],"afters":[],"start":1750931185750,"stop":1750931195175}

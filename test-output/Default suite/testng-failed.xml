@@ -5,7 +5,8 @@
     <classes>
       <class name="com.bookstore.api.tests.BookApiTest">
         <methods>
-          <include name="testLogin"/>
+          <include name="testGetNonExistentBook"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- com.bookstore.api.tests.BookApiTest -->
     </classes>
