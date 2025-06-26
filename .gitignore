@@ -21,4 +21,6 @@ target/
 /extent-reports/
 test-output/
 allure-results/
+.allure/
+
 
