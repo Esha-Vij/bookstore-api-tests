@@ -20,3 +20,5 @@
 # Reports
 /extent-reports/
 test-output/
+allure-results/
+
