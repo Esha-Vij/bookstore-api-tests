@@ -11,8 +11,8 @@
 *.iws
 *.ipr
 
-# Maven build
-/target/
+# build
+target/
 
 # Logs
 *.log

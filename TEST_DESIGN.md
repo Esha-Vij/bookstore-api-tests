@@ -75,19 +75,7 @@ mvn test -DsuiteXmlFile=testng-groups.xml -Dtest="All Tests"
 
 ## 🔧 **Test Improvements Made**
 
-### **1. Fixed Failing Tests**
-
-#### **`testCreateBookWithEmptyPayload`**
-- **Issue**: Mock server didn't handle empty payloads
-- **Fix**: Added specific mock endpoint for empty JSON payload
-- **Result**: Returns 422 validation error as expected
-
-#### **`testDeleteAlreadyDeletedBook`**
-- **Issue**: Used same bookId that was already "deleted"
-- **Fix**: Mock server now returns 404 for book ID 2 (deleted book)
-- **Result**: Properly tests deletion of already deleted book
-
-### **2. Enhanced Assertions**
+### **1. Enhanced Assertions**
 
 All assertions now include descriptive messages:
 
@@ -99,7 +87,7 @@ Assert.assertEquals(response.getStatusCode(), 200);
 Assert.assertEquals(response.getStatusCode(), 200, "Book creation should be successful");
 ```
 
-### **3. Better Test Dependencies**
+### **2. Better Test Dependencies**
 
 Tests are properly chained using `dependsOnMethods`:
 
