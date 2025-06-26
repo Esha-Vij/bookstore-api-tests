@@ -1,0 +1,71 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Bookstore API Suite with Groups">
+    
+    <!-- Smoke Tests - Quick validation of core functionality -->
+    <test name="Smoke Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.bookstore.api.tests"/>
+        </packages>
+    </test>
+    
+    <!-- CRUD Tests - Full CRUD operations -->
+    <test name="CRUD Tests">
+        <groups>
+            <run>
+                <include name="crud"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.bookstore.api.tests"/>
+        </packages>
+    </test>
+    
+    <!-- Authentication Tests -->
+    <test name="Authentication Tests">
+        <groups>
+            <run>
+                <include name="authentication"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.bookstore.api.tests"/>
+        </packages>
+    </test>
+    
+    <!-- Negative Tests -->
+    <test name="Negative Tests">
+        <groups>
+            <run>
+                <include name="negative"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.bookstore.api.tests"/>
+        </packages>
+    </test>
+    
+    <!-- Validation Tests -->
+    <test name="Validation Tests">
+        <groups>
+            <run>
+                <include name="validation"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.bookstore.api.tests"/>
+        </packages>
+    </test>
+    
+    <!-- All Tests -->
+    <test name="All Tests">
+        <packages>
+            <package name="com.bookstore.api.tests"/>
+        </packages>
+    </test>
+    
+</suite> 
