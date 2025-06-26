@@ -48,6 +48,7 @@ This project is a REST API automation framework built to test the core functiona
 
 ## 🧾 Project Structure
 
+```
 bookstore-api-tests/
 ├── src/
 │   ├── main/
@@ -69,6 +70,10 @@ bookstore-api-tests/
 ├── .gitignore                 # Files to ignore in Git
 ├── README.md                  # Project documentation
 
+
+<pre> <code> bookstore-api-tests/ ├── src/ │ ├── main/ │ │ └── java/com/bookstore/ │ │ ├── config/ # ConfigManager for base URL │ │ └── utils/ # AuthUtil for signup, login, and token │ └── test/ │ └── java/com/bookstore/api/ │ └── tests/ # TestNG test cases (Book API) ├── server/ # FastAPI server implementation │ ├── main.py # FastAPI application │ ├── requirements.txt # Python dependencies │ └── README.md # Server setup instructions ├── config.properties # Env configuration ├── testng.xml # TestNG suite configuration ├── pom.xml # Maven config ├── run-tests.bat # Windows test runner ├── run-tests.sh # Unix/Linux test runner ├── .gitignore # Files to ignore in Git ├── README.md # Project documentation </code> </pre>
+```
+<pre> <code> bookstore-api-tests/ ├── src/ │ ├── main/ │ │ └── java/com/bookstore/ │ │ ├── config/ # ConfigManager for base URL │ │ └── utils/ # AuthUtil for signup, login, and token │ └── test/ │ └── java/com/bookstore/api/ │ └── tests/ # TestNG test cases (Book API) ├── server/ # FastAPI server implementation │ ├── main.py # FastAPI application │ ├── requirements.txt # Python dependencies │ └── README.md # Server setup instructions ├── config.properties # Env configuration ├── testng.xml # TestNG suite configuration ├── pom.xml # Maven config ├── run-tests.bat # Windows test runner ├── run-tests.sh # Unix/Linux test runner ├── .gitignore # Files to ignore in Git ├── README.md # Project documentation </code> </pre>
 
 ---
 
